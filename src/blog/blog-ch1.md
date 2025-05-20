@@ -6,6 +6,7 @@ date: 2024-12-05
 # {{ course-title }}
 ## Mei 2025
 * Deploy to Github
+* Yes
 
 ## December 2024
 * Uitleg php
