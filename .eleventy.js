@@ -5,6 +5,7 @@ import pluginTOC from "eleventy-plugin-toc";
 // import { minify } from "terser";
 import markdownIt from 'markdown-it';
 import markdownItAnchor from 'markdown-it-anchor';
+import { HtmlBasePlugin } from "@11ty/eleventy";
 
 export default function(eleventyConfig) {
 	// Order matters, put this at the top of your configuration file.
@@ -24,7 +25,9 @@ export default function(eleventyConfig) {
 
     return coll;
   });
-  
+ 
+  eleventyConfig.addPlugin(HtmlBasePlugin);
+
   eleventyConfig.addPlugin(pluginWebc, {
     components: [
         "src/_components/*.webc",
@@ -104,11 +107,11 @@ eleventyConfig.addFilter("postsAscending", (collection) => {
 });
 
 return {
-// pathPrefix: "//",
-dir: {
-    input: "src",
-    output: "www",
-},
+    pathPrefix: "/edutorial/",
+    dir: {
+        input: "src",
+        output: "www",
+    },
 };
 
 }

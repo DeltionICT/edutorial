@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="container">
-            <a id="logolink" href="/"><img id="logo" class="standard" src="/_assets/logo.svg" alt="logo"></a>
+            <a id="logolink" href="/"><img id="logo" class="standard" src="{{ ' /_assets/logo.svg' | htmlBaseUrl }}" alt="logo"></a>
             <nav>
                 {% for item in nav.items %}
                 <a href="{{ item.url }}" class="nav-link" {% if item.url==page.url %}aria-current="page"
@@ -40,7 +40,7 @@
     <footer>
         {% block footer %}{% endblock %}
     </footer>
-    <script src="/_js/menu-scroller.js"></script>
+    <script src="{{ ' /_js/menu-scroller.js' | htmlBaseUrl }}"></script>
 </body>
 
 </html>

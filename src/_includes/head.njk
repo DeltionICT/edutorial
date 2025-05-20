@@ -4,15 +4,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ site.name }} | {{ title }}</title>
-<link rel="shortcut icon" type="image/png" href="/_assets/android/edutorial-icon-48.png">
+<link rel="shortcut icon" type="image/png" href="{{' /_assets/android/edutorial-icon-48.png' | htmlBaseUrl }}">
 
-<link rel="manifest" href='/manifest.json'>
+<link rel="manifest" href="{{ ' /manifest.json'| htmlBaseUrl }}">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href="/_css/prism-one-light.css" rel="stylesheet">
-<link href="/_css/colors.css" rel="stylesheet">
-<link href="/_css/base.css" rel="stylesheet">
-<link href="/_css/frontpage.css" rel="stylesheet">
-<link href="/_css/desktop.css" rel="stylesheet">
-<link href="/_css/tablet.css" rel="stylesheet">
-<link href="/_css/mobile.css" rel="stylesheet">
+<link href=" {{ ' /_css/prism-one-light.css' | htmlBaseUrl }}"  rel="stylesheet">
+<link href="{{ ' /_css/colors.css' | htmlBaseUrl }}" rel="stylesheet">
+<link href="{{ ' /_css/base.css' | htmlBaseUrl }}" rel="stylesheet">
+<link href="{{ ' /_css/frontpage.css' | htmlBaseUrl }}" rel="stylesheet">
+<link href="{{ ' /_css/desktop.css' | htmlBaseUrl }}" rel="stylesheet">
+<link href="{{ ' /_css/tablet.css' | htmlBaseUrl }}" rel="stylesheet">
+<link href="{{ ' /_css/mobile.css' | htmlBaseUrl }}" rel="stylesheet">
 {% endblock %}
